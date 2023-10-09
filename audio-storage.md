@@ -2,7 +2,7 @@
 1. Debugging
 2. Audit
 
-### Various Origins for audio (TABLE)
+### Various Origins for audio
    | Part of the flow | User/Machine generated | Frequency in a flow | Cached or not | Should we store? | Storage time | Cost of storing |
    | -----------------| ---------------------- | ------------------- | ------------- | ---------------- | ------------ | --------------- |
    | 1. User opens the bot. | Machine | 1 | No | No | - | - |
