@@ -18,17 +18,17 @@
 
 ### Complete List of Logs
 1. Error:
-   a. BhashiniTranslate
-   b. BhashiniASR
-   c. BhashiniT2S
-   d. PMKisanSendOTP
-   e. PMKisanVerifyOTP
-   f. PMKisanUserDetails
-   g. PMKisanBeneficiaryStatus
-   h. DatabaseService
-   i. Classifier
-   j. Miscellaneous
+- BhashiniTranslate
+- BhashiniASR
+- BhashiniT2S
+- PMKisanSendOTP
+- PMKisanVerifyOTP
+- PMKisanUserDetails
+- PMKisanBeneficiaryStatus
+- DatabaseService
+- Classifier
+- Miscellaneous
 2. Info:
-   a. BhashiniRetry
-   b. BhashiniResponseStatus
-   c. PMKisanResponseStatus
+- BhashiniRetry
+- BhashiniResponseStatus
+- PMKisanResponseStatus
