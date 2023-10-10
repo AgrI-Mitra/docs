@@ -17,7 +17,7 @@
 <Timestamp> <SessionID> <ActionName> <ActionData>
 
 ### Complete List of Logs
-1. Error:
+#### 1. Error:
 - BhashiniTranslate
 - BhashiniASR
 - BhashiniT2S
@@ -28,7 +28,7 @@
 - DatabaseService
 - Classifier
 - Miscellaneous
-2. Info:
+#### 2. Info:
 - BhashiniRetry
 - BhashiniResponseStatus
 - PMKisanResponseStatus
