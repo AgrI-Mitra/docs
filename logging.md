@@ -14,21 +14,31 @@
 6. Final translated response.
 
 ### Log Format
-<Timestamp> <SessionID> <ActionName> <ActionData>
+| Timestamp | SessionID | Log Type | ActionName | ActionData |
+| --------- | --------- | -------- | ---------- | ---------- |
+* Action Data may vary for each action (It will be an JSON).
 
-### Complete List of Logs
-#### 1. Error:
-- BhashiniTranslate
-- BhashiniASR
-- BhashiniT2S
-- PMKisanSendOTP
-- PMKisanVerifyOTP
-- PMKisanUserDetails
-- PMKisanBeneficiaryStatus
-- DatabaseService
-- Classifier
-- Miscellaneous
-#### 2. Info:
-- BhashiniRetry
-- BhashiniResponseStatus
-- PMKisanResponseStatus
+### Complete List of Logs Actions:
+| Action | Log Type | Log Data | 
+| ------ | -------- | -------- |
+| SessionState | INFO | State at which current session in |
+| BhashiniTranslate | INFO | Retry indicator |
+| BhashiniTranslate | INFO | Success indicator |
+| BhashiniTranslate | ERROR | Any error received |
+| BhashiniASR | INFO | Retry indicator |
+| BhashiniASR | INFO | Success indicator |
+| BhashiniASR | ERROR | Any error received |
+| BhashiniT2S | INFO | Retry indicator |
+| BhashiniT2S | INFO | Success indicator |
+| BhashiniT2S | ERROR | Any error received |
+| PMKisanSendOTP | INFO | Success indicator |
+| PMKisanSendOTP | ERROR | Any error received |
+| PMKisanVerifyOTP | INFO | Success indicator |
+| PMKisanVerifyOTP | ERROR | Any error received |
+| PMKisanUserDetails | INFO | Success indicator |
+| PMKisanUserDetails | ERROR | Any error received |
+| PMKisanBeneficiaryStatus | INFO | Success indicator |
+| PMKisanBeneficiaryStatus | ERROR | Any error received |
+| DatabaseService | ERROR | Invalid operations/missing data |
+| Classifier | ERROR | Any error received |
+| Miscellaneous | ERROR | Unexpected/Unidentified errors |
