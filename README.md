@@ -1,4 +1,4 @@
-# Repository Documentation
+# Documentation
 
 Welcome to the documentation for this repository. Here's a quick index of the available documents:
 
