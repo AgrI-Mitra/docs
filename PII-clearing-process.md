@@ -1,4 +1,4 @@
-# Clear Personal Information from Sessions
+# ClearingPersonal Information from Sessions
 
 ## Overview
 
