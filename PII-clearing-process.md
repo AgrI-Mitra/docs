@@ -36,4 +36,8 @@ The process is scheduled to run every 30 minutes using a cron job. During each e
 
 ## Flow chart representation of the process:
 
+### Immediate Clearing on Session Completion
+<img width="479" alt="Screenshot 2024-07-02 at 10 22 04 AM" src="https://github.com/AgrI-Mitra/docs/assets/130033232/cc3ced68-66fb-4037-9e11-d572d74b8a38">
+
+### Incomplete/Inactive sessions
 <img width="395" alt="Screenshot 2024-07-02 at 9 52 14 AM" src="https://github.com/AgrI-Mitra/docs/assets/130033232/3b95c085-4e12-4d9c-a73f-2d1c4c63ebb0">
