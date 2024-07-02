@@ -26,5 +26,6 @@ The process is scheduled to run every 30 minutes using a cron job. During each e
    - Log the success of the operation.
    - In case of an error, log the error for debugging purposes.
 
+## Flow chart representation of the process:
 
 <img width="395" alt="Screenshot 2024-07-02 at 9 52 14 AM" src="https://github.com/AgrI-Mitra/docs/assets/130033232/3b95c085-4e12-4d9c-a73f-2d1c4c63ebb0">
