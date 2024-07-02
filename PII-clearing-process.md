@@ -1,16 +1,24 @@
-# Clearing Personal Information from Sessions
+# Clearing Personal Information from Inactive or Completed Sessions
 
 ## Overview
 
-This repository contains code to automatically remove personal information, specifically Aadhaar numbers, from inactive user sessions. The process runs every 30 minutes, ensuring that sensitive data is cleared from completed or inactive sessions to maintain data privacy.
+This repository contains code to automatically remove personal information, specifically Aadhaar numbers, from user sessions. The process clears data immediately upon session completion and also runs every 30 minutes to clear data from inactive or incomplete sessions.
 
 ## How It Works
 
-### Scheduled Task
+### Immediate Clearing on Session Completion
+
+When a session is marked as complete, the system immediately clears the following personal information from the session context:
+- `userAadhaarNumber`
+- `lastAadhaarDigits`
+- `userIdentifier`
+- Various state indicators (`type`, `query`, `state`, `currentState`, `response`).
+
+### Scheduled Task for Inactive/Incomplete Sessions
 
 The process is scheduled to run every 30 minutes using a cron job. During each execution, it performs the following steps:
 
-1. **Find Inactive Sessions**:
+1. **Find Inactive/Incomplete Sessions**:
    - Identify conversations last updated more than 30 minutes ago.
    - Check if the `userAadhaarNumber` field in the conversation context is not empty.
 
