@@ -13,13 +13,13 @@
   - feedback: An optional relation to the feedback model, indicating feedback associated with this conversation.
   - @@unique([id]): Ensures that the id field is unique for each record.
 -----------
-### User
-- This model stores information about users who interact with the system.
+### User (named as user this denotes a session as we do not store user information)
+- This model stores information about user sessions, the user using same browser will maintain there session till they refresh.
 
-  - id: A unique identifier for each user, stored as a UUID.
-  - createdAt: Timestamp for when the user was created, defaults to the current time.
-  - identifier: Optional string representing an identifier for the user (e.g., username or email).
-  - isVerified: A boolean indicating whether the user is verified or not, defaults to false.
+  - id: A unique identifier for each user session, stored as a UUID.
+  - createdAt: Timestamp for when the user session was created, defaults to the current time.
+  - identifier: Optional string representing an identifier for the user for that session.
+  - isVerified: A boolean indicating whether the user session is verified or not, defaults to false. (via PM KISAN OTP)
   - messages: A one-to-many relationship to the Message model, representing all messages sent by this user.
 -----------
 ### Message
@@ -30,8 +30,8 @@
   - text: Optional string storing the message text.
   - audio: Optional string storing an audio message.
   - type: A string indicating the type of message (e.g., text, audio).
-  - userId: A UUID linking the message to a specific user.
-  - user: A relation to the User model.
+  - userId: A UUID linking the message to a specific user session.
+  - user: A relation to the User (session) model.
   - flowId: A string representing the flow identifier for the message.
   - reaction: An integer field representing the user’s reaction to the message, with a default value of 0.
   - messageType: Optional string field for classifying the type of message.
