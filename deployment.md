@@ -7,7 +7,7 @@
 ## Steps to Deploy
 
 1. Clone the [devops](https://github.com/agri-mitra/devops) repository
-2. Navigate to directory named *combined*
+2. Navigate to directory named *combined* path - home/ubuntu/devops/combined
 3. Create a .env file and add the environment variables
 4. Start the services using  the command ```docker compose up -d```
 
